@@ -12,15 +12,16 @@ __copyright__ = "(c) 2021, Inria"
 __date__ = "August 12 2021"
 
 import os
-import sys
 import pathlib
+import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).parent.absolute()))
 sys.path.insert(0, str(pathlib.Path(__file__).parent.absolute())+"/../")
 
+import numpy as np
+
 from sofagym.utils import createCosserat as cosserat
 
-import numpy as np
 
 class Cart:
     def __init__(self, *args, **kwargs):

@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 
+from math import cos, pi, sin
+
 import Sofa.Core
 import Sofa.Simulation
-from math import cos, sin, pi
-
-from GripperToolbox import translateFingers, getRotationCenter
+from GripperToolbox import getRotationCenter, translateFingers
 
 
 def rotate_x(point, angle, rotationCenter):

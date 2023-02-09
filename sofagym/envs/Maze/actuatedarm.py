@@ -7,19 +7,17 @@
         - ServoArm
 """
 
-import sys
 import pathlib
+import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).parent.absolute())+"/../")
 sys.path.insert(0, str(pathlib.Path(__file__).parent.absolute()))
 
+from s90servo import ServoMotor
 from splib3.numerics import vec3
 from splib3.objectmodel import *
-from stlib3.visuals import VisualModel
 from stlib3.components import addOrientedBoxRoi
-
-from s90servo import ServoMotor
-
+from stlib3.visuals import VisualModel
 
 mesh_path = os.path.dirname(os.path.abspath(__file__))+'/mesh/'
 

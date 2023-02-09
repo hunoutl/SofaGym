@@ -10,14 +10,14 @@ __date__ = "Dec 01 2021"
 
 import os
 
-from sofagym.AbstractEnv import AbstractEnv
-from sofagym.rpc_server import start_scene
-from sofagym.viewer import LegacyViewer
-from sofagym.envs.Diamond.DiamondToolbox import startCmd
-
+import numpy as np
 from gym import spaces
 
-import numpy as np
+from sofagym.AbstractEnv import AbstractEnv
+from sofagym.envs.Diamond.DiamondToolbox import startCmd
+from sofagym.rpc_server import start_scene
+from sofagym.viewer import LegacyViewer
+
 
 class DiamondRobotEnv(AbstractEnv):
     """Sub-class of AbstractEnv, dedicated to the trunk scene.

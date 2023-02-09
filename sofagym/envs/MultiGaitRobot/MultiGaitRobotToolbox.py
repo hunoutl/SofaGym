@@ -8,9 +8,9 @@ __version__ = "1.0.0"
 __copyright__ = "(c) 2020, Inria"
 __date__ = "Oct 7 2020"
 
-import numpy as np
 import sys
 
+import numpy as np
 import Sofa
 import Sofa.Core
 import Sofa.Simulation

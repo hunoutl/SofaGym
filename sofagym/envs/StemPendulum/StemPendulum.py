@@ -11,19 +11,20 @@ __version__ = "1.0.0"
 __copyright__ = "(c) 2021, Inria"
 __date__ = "August 12 2021"
 
+import importlib
 import os
-import numpy as np
+import pathlib
+import sys
 from math import cos, sin
 
-import sys
-import importlib
-import pathlib
+import numpy as np
 
 sys.path.insert(0, str(pathlib.Path(__file__).parent.absolute()))
 sys.path.insert(0, str(pathlib.Path(__file__).parent.absolute())+"/../")
 
-from sofagym.utils import createCosserat as cosserat
 from sofagym.utils import addRigidObject
+from sofagym.utils import createCosserat as cosserat
+
 
 class StemPendulum():
     def __init__(self, *args, **kwargs):

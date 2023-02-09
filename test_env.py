@@ -12,16 +12,19 @@ __version__ = "1.0.0"
 __copyright__ = "(c) 2020, Robocath, Inria"
 __date__ = "Oct 7 2020"
 
-import sys
 import os
+import sys
 import time
+
 import gym
 
 import sofagym
 from sofagym.envs import *
+
 RANDOM = False
 
 import psutil
+
 pid = os.getpid()
 py = psutil.Process(pid)
 

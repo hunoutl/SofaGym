@@ -13,17 +13,19 @@ __date__ = "August 12 2021"
 
 VISUALISATION = False
 
-import sys
 import pathlib
+import sys
+
 sys.path.insert(0, str(pathlib.Path(__file__).parent.absolute())+"/../")
 sys.path.insert(0, str(pathlib.Path(__file__).parent.absolute()))
 
+import numpy as np
+from CatchTheObject import Ball, Cart, Gripper
+from CatchTheObjectToolbox import (applyAction, goalSetter, rewardShaper,
+                                   sceneModerator)
+
 from sofagym.header import addHeader as header
 from sofagym.header import addVisu as visu
-
-import numpy as np
-from CatchTheObject import Cart, Ball, Gripper
-from CatchTheObjectToolbox import rewardShaper, sceneModerator, applyAction, goalSetter
 
 
 def createScene(rootNode, config={"source": [0, -70, 10],

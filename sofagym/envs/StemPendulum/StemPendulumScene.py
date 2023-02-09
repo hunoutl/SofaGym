@@ -13,21 +13,24 @@ __date__ = "August 12 2021"
 
 VISUALISATION = False
 
-import sys
 import importlib
 import pathlib
+import sys
+
 import numpy as np
 
 sys.path.insert(0, str(pathlib.Path(__file__).parent.absolute())+"/../")
 sys.path.insert(0, str(pathlib.Path(__file__).parent.absolute()))
 
+from Controller import ControllerStemPendulum
+from StemPendulum import StemPendulum
+from StemPendulumToolbox import (applyAction, goalSetter, rewardShaper,
+                                 sceneModerator)
+
 from sofagym.header import addHeader as header
 from sofagym.header import addVisu as visu
 from sofagym.utils import addRigidObject
 
-from StemPendulum import StemPendulum
-from StemPendulumToolbox import rewardShaper, sceneModerator, applyAction, goalSetter
-from Controller import ControllerStemPendulum
 
 def add_goal_node(root, pos):
     goal = root.addChild("Goal")

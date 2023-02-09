@@ -10,18 +10,16 @@ __copyright__ = "(c) 2020, Robocath, CNRS, Inria"
 __date__ = "Oct 7 2020"
 
 
-from xmlrpc.server import SimpleXMLRPCServer
-from xmlrpc.server import SimpleXMLRPCRequestHandler
-from socketserver import ThreadingMixIn
-
-import socketserver
-import threading
-import subprocess
-import queue
-from os.path import dirname, abspath
-import sys
 import copy
+import queue
+import socketserver
+import subprocess
+import sys
+import threading
 import time
+from os.path import abspath, dirname
+from socketserver import ThreadingMixIn
+from xmlrpc.server import SimpleXMLRPCRequestHandler, SimpleXMLRPCServer
 
 path = dirname(dirname(abspath(__file__))) + '/'
 

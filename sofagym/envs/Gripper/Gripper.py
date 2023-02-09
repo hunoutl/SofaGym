@@ -1,10 +1,8 @@
 
-from math import pi, cos, sin, pi
-import random
-
-
-import sys
 import pathlib
+import random
+import sys
+from math import cos, pi, sin
 
 sys.path.insert(0, str(pathlib.Path(__file__).parent.absolute())+"/../")
 sys.path.insert(0, str(pathlib.Path(__file__).parent.absolute()))

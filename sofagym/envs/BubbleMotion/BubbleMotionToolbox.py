@@ -8,16 +8,15 @@ __version__ = "1.0.0"
 __copyright__ = "(c) 2021, Inria"
 __date__ = "Fab 3 2021"
 
-import numpy as np
+import pathlib
+import sys
 
+import numpy as np
 import Sofa
 import Sofa.Core
 import Sofa.Simulation
 import SofaRuntime
 from splib.animation.animate import Animation
-
-import sys
-import pathlib
 
 sys.path.insert(0, str(pathlib.Path(__file__).parent.absolute())+"/../")
 sys.path.insert(0, str(pathlib.Path(__file__).parent.absolute()))

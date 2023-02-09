@@ -10,6 +10,7 @@ __copyright__ = "(c) 2021, Inria"
 __date__ = "May 4 2021"
 
 import json
+
 import Sofa
 
 

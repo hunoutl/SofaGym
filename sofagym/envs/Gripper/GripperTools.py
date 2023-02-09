@@ -8,14 +8,13 @@ __version__ = "1.0.0"
 __copyright__ = "(c) 2020, Inria"
 __date__ = "Oct 7 2020"
 
+from math import cos, sin
+
+import numpy as np
 import Sofa
 import Sofa.Core
 import Sofa.Simulation
 import SofaRuntime
-
-from math import cos, sin
-import numpy as np
-
 
 SofaRuntime.importPlugin("SofaComponentAll")
 

@@ -9,13 +9,11 @@ __copyright__ = "(c) 2021, Robocath, CNRS, Inria"
 __date__ = "Dec 01 2021"
 
 import numpy as np
-
 import Sofa
 import Sofa.Core
 import Sofa.Simulation
 import SofaRuntime
 from splib3.animation.animate import Animation
-
 
 SofaRuntime.importPlugin("SofaComponentAll")
 

@@ -13,18 +13,20 @@ __date__ = "August 12 2021"
 
 VISUALISATION = False
 
-import sys
 import pathlib
+import sys
+
 import numpy as np
 
 sys.path.insert(0, str(pathlib.Path(__file__).parent.absolute())+"/../")
 sys.path.insert(0, str(pathlib.Path(__file__).parent.absolute()))
 
+from BubbleMotion import BubbleMotion
+from BubbleMotionToolbox import (applyAction, goalSetter, rewardShaper,
+                                 sceneModerator)
+
 from sofagym.header import addHeader as header
 from sofagym.header import addVisu as visu
-
-from BubbleMotion import BubbleMotion
-from BubbleMotionToolbox import rewardShaper, sceneModerator, applyAction, goalSetter
 
 sys.path.insert(0, str(pathlib.Path(__file__).parent.absolute())+"/../")
 sys.path.insert(0, str(pathlib.Path(__file__).parent.absolute()))

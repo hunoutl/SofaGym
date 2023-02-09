@@ -9,7 +9,7 @@ __copyright__ = "(c) 2021, Robocath, CNRS, Inria"
 __date__ = "Dec 01 2021"
 
 
-from os.path import dirname, abspath
+from os.path import abspath, dirname
 
 path = dirname(abspath(__file__))+'/mesh/'
 

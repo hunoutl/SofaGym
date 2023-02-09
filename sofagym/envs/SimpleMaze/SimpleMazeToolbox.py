@@ -8,23 +8,21 @@ __version__ = "1.0.0"
 __copyright__ = "(c) 2021, Robocath, CNRS, Inria"
 __date__ = "Mar 23 2021"
 
-import sys
 import pathlib
+import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).parent.absolute())+"/../")
 sys.path.insert(0, str(pathlib.Path(__file__).parent.absolute()))
 
 
 import numpy as np
-
 import Sofa
 import Sofa.Core
 import Sofa.Simulation
 import SofaRuntime
+from MazeTools import Graph, dijkstra
 from splib3.animation.animate import Animation
 from splib3.numerics import Quat
-from MazeTools import Graph, dijkstra
-
 
 SofaRuntime.importPlugin("SofaComponentAll")
 

@@ -8,16 +8,16 @@ __version__ = "1.0.0"
 __copyright__ = "(c) 2021, Robocath, CNRS, Inria"
 __date__ = "Mar 23 2021"
 
-import sys
 import pathlib
+import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).parent.absolute())+"/../")
 sys.path.insert(0, str(pathlib.Path(__file__).parent.absolute()))
 
 import os
-from SimpleMazeToolbox import rewardShaper, goalSetter
-from splib3.animation import AnimationManagerController
 
+from SimpleMazeToolbox import goalSetter, rewardShaper
+from splib3.animation import AnimationManagerController
 
 path = os.path.dirname(os.path.abspath(__file__))
 path_mesh = path + '/mesh/'

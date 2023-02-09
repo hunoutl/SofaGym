@@ -8,27 +8,26 @@ __version__ = "1.0.0"
 __copyright__ = "(c) 2021, Robocath, CNRS, Inria"
 __date__ = "Dec 01 2021"
 
-import sys
 import pathlib
+import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).parent.absolute())+"/../")
 sys.path.insert(0, str(pathlib.Path(__file__).parent.absolute()))
 
 
-from stlib3.physics.deformable import ElasticMaterialObject
-from splib3.objectmodel import SofaPrefab, SofaObject
-from splib3.numerics import *
-from stlib3.components import addOrientedBoxRoi
-from stlib3.physics.collision import CollisionMesh
-
-from actuatedarm import ActuatedArm
-from rigidification import Rigidify
-from utils import Scene, setData
-from MazeToolbox import rewardShaper, goalSetter
-
 import math
 import os
+
 import numpy as np
+from actuatedarm import ActuatedArm
+from MazeToolbox import goalSetter, rewardShaper
+from rigidification import Rigidify
+from splib3.numerics import *
+from splib3.objectmodel import SofaObject, SofaPrefab
+from stlib3.components import addOrientedBoxRoi
+from stlib3.physics.collision import CollisionMesh
+from stlib3.physics.deformable import ElasticMaterialObject
+from utils import Scene, setData
 
 path = os.path.dirname(os.path.abspath(__file__))
 path_mesh = path + '/mesh/'

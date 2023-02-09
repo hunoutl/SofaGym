@@ -20,8 +20,8 @@ Contributors:
         damien.marchal@univ-lille.fr
         eulalie.coevoet@inria.fr
 """
-import sys
 import pathlib
+import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).parent.absolute())+"/../")
 sys.path.insert(0, str(pathlib.Path(__file__).parent.absolute()))
@@ -29,7 +29,7 @@ sys.path.insert(0, str(pathlib.Path(__file__).parent.absolute()))
 
 
 import Sofa
-from splib3.numerics import Vec3, Quat
+from splib3.numerics import Quat, Vec3
 
 
 def Rigidify(targetObject, sourceObject, groupIndices, frames=None, name=None, frameOrientation=None):

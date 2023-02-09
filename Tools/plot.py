@@ -1,7 +1,8 @@
-import seaborn as sns
-import matplotlib.pyplot as plt
-import json
 import argparse
+import json
+
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 parser = argparse.ArgumentParser()
 parser.add_argument("-ne", "--num_env", help = "Number of the env",

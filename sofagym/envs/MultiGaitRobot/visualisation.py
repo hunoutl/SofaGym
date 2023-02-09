@@ -9,15 +9,16 @@ __version__ = "1.0.0"
 __copyright__ = "(c) 2021, Inria"
 __date__ = "May 4 2021"
 
-import sys
 import pathlib
+import sys
+
 sys.path.insert(0, str(pathlib.Path(__file__).parent.absolute())+"/../")
 sys.path.insert(0, str(pathlib.Path(__file__).parent.absolute()))
 
 import json
-import Sofa
 
-from MultiGaitRobotToolbox import changePressure, action_to_command
+import Sofa
+from MultiGaitRobotToolbox import action_to_command, changePressure
 
 
 def get_config(path="./config.txt"):

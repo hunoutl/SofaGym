@@ -16,22 +16,21 @@ TRAIN = True
 TEST = False
 
 
-from stable_baselines3 import SAC, PPO
-from stable_baselines3.common.vec_env import SubprocVecEnv
-from AVEC.stable_baselines import PPO2
-from AVEC.stable_baselines.sac import SAC as SAC_AVEC
+import argparse
+import json
+import os
+import pathlib
+import random
+import sys
+import time
 
 import gym
-
-import sys
-import os
-import json
-import pathlib
 import numpy as np
 import torch
-import random
-import argparse
-import time
+from AVEC.stable_baselines import PPO2
+from AVEC.stable_baselines.sac import SAC as SAC_AVEC
+from stable_baselines3 import PPO, SAC
+from stable_baselines3.common.vec_env import SubprocVecEnv
 
 sys.path.insert(0, str(pathlib.Path(__file__).parent.absolute())+"/../")
 sys.path.insert(0, str(pathlib.Path(__file__).parent.absolute()))

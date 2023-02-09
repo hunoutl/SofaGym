@@ -8,19 +8,20 @@ __version__ = "1.0.0"
 __copyright__ = "(c) 2020, Inria"
 __date__ = "Oct 7 2020"
 
+import pathlib
+import sys
+
 import SofaRuntime
 from splib.animation.animate import Animation
-
-import sys
-import pathlib
 
 sys.path.insert(0, str(pathlib.Path(__file__).parent.absolute())+"/../")
 sys.path.insert(0, str(pathlib.Path(__file__).parent.absolute()))
 
 
-from GripperTools import rewardShaper, goalSetter, _getGoalPos, getState, getReward, \
-    getRotationCenter, translateFingers, rotateFingers, displace, getPos, setPos
-
+from GripperTools import (_getGoalPos, displace, getPos, getReward,
+                          getRotationCenter, getState, goalSetter,
+                          rewardShaper, rotateFingers, setPos,
+                          translateFingers)
 
 SofaRuntime.importPlugin("SofaComponentAll")
 

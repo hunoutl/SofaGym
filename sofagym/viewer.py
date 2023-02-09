@@ -8,21 +8,20 @@ __version__ = "1.0.0"
 __copyright__ = "(c) 2020, Robocath, Inria"
 __date__ = "Oct 7 2020"
 
-import numpy as np
-import pygame
-from PIL import Image
-import queue
+import datetime
 import importlib
+import queue
 import sys
 
 import glfw
+import imageio
+import numpy as np
+import pygame
 import Sofa
 import Sofa.SofaGL
 from OpenGL.GL import *
 from OpenGL.GLU import *
-
-import imageio
-import datetime
+from PIL import Image
 
 from sofagym.rpc_server import get_position
 from sofagym.simulate import init_simulation, step_simulation

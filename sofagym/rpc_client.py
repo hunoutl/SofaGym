@@ -8,17 +8,16 @@ __version__ = "1.0.0"
 __copyright__ = "(c) 2020, Robocath, CNRS, Inria"
 __date__ = "Oct 7 2020"
 
+import ast
+import importlib
+import json
+import os
+import pathlib
+import random
+import sys
+import time
 import xmlrpc.client
 
-import os
-import sys
-import ast
-import json
-import time
-import random
-import importlib
-
-import pathlib
 sys.path.insert(0, str(pathlib.Path(__file__).parent.absolute())+"/../../../")
 
 from sofagym.simulate import init_simulation, step_simulation

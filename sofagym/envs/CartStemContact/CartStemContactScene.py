@@ -13,17 +13,18 @@ __date__ = "August 12 2021"
 
 VISUALISATION = False
 
-import sys
 import pathlib
+import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).parent.absolute())+"/../")
 sys.path.insert(0, str(pathlib.Path(__file__).parent.absolute()))
 
+from CartStemContact import CartStem, Contacts
+from CartStemContactToolbox import (applyAction, goalSetter, rewardShaper,
+                                    sceneModerator)
+
 from sofagym.header import addHeader as header
 from sofagym.header import addVisu as visu
-
-from CartStemContact import CartStem, Contacts
-from CartStemContactToolbox import rewardShaper, goalSetter, sceneModerator, applyAction
 
 
 def add_goal_node(root, pos):

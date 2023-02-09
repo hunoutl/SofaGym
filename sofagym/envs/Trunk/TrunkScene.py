@@ -1,20 +1,19 @@
-import sys
 import pathlib
+import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).parent.absolute())+"/../")
 sys.path.insert(0, str(pathlib.Path(__file__).parent.absolute()))
 
 
-from splib.animation import AnimationManagerController
-from math import cos, sin
-import numpy as np
-from splib.objectmodel import SofaPrefab, SofaObject
-from splib.numerics import Vec3, Quat
-
-
-from TrunkToolbox import rewardShaper, goalSetter
-
 import os
+from math import cos, sin
+
+import numpy as np
+from splib.animation import AnimationManagerController
+from splib.numerics import Quat, Vec3
+from splib.objectmodel import SofaObject, SofaPrefab
+from TrunkToolbox import goalSetter, rewardShaper
+
 path = os.path.dirname(os.path.abspath(__file__))+'/mesh/'
 
 

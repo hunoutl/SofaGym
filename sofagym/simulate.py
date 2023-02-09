@@ -9,10 +9,10 @@ __version__ = "1.0.0"
 __copyright__ = "(c) 2020, Robocath, Inria"
 __date__ = "Oct 7 2020"
 
+import importlib
+
 import Sofa
 import SofaRuntime
-
-import importlib
 
 
 def init_simulation(config, _startCmd=None, mode="simu_and_visu"):

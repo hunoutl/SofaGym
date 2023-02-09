@@ -1,14 +1,14 @@
 # -*- coding: utf-8 -*-
-import sys
 import pathlib
+import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).parent.absolute())+"/../")
 sys.path.insert(0, str(pathlib.Path(__file__).parent.absolute()))
 
 
 
-from stlib3.scene import Scene as stScene
 from splib3.objectmodel import setData
+from stlib3.scene import Scene as stScene
 
 
 def Modelling(parent):

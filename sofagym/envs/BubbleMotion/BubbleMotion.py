@@ -12,9 +12,10 @@ __copyright__ = "(c) 2021, Inria"
 __date__ = "August 12 2021"
 
 import os
-import numpy as np
-import sys
 import pathlib
+import sys
+
+import numpy as np
 
 sys.path.insert(0, str(pathlib.Path(__file__).parent.absolute()))
 sys.path.insert(0, str(pathlib.Path(__file__).parent.absolute())+"/../")

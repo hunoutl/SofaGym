@@ -1,5 +1,5 @@
-from pyquaternion import Quaternion
 import numpy as np
+from pyquaternion import Quaternion
 
 
 def addSofaPlugins(node, newplugins):

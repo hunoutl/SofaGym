@@ -11,9 +11,11 @@ __version__ = "1.0.0"
 __copyright__ = "(c) 2021, Inria"
 __date__ = "March 8 2021"
 
-import Sofa
 import json
+
 import numpy as np
+import Sofa
+
 
 class ControllerCartStem(Sofa.Core.Controller):
     def __init__(self, *args, **kwargs):

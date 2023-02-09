@@ -8,17 +8,17 @@ __version__ = "1.0.0"
 __copyright__ = "(c) 2020, Robocath, CNRS, Inria"
 __date__ = "Oct 7 2020"
 
-import gym
-from gym.utils import seeding
-
-import numpy as np
 import copy
 import os
 
+import gym
+import numpy as np
 import splib3
+from gym.utils import seeding
 
+from sofagym.rpc_server import (add_new_step, clean_registry, close_scene,
+                                get_result, start_server)
 from sofagym.viewer import Viewer
-from sofagym.rpc_server import start_server, add_new_step, get_result, clean_registry, close_scene
 
 
 class AbstractEnv(gym.Env):

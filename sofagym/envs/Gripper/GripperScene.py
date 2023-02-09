@@ -1,20 +1,18 @@
 
 import os
-import SofaRuntime
-import numpy as np
-
-from splib3.animation import AnimationManagerController
-
-
-import sys
 import pathlib
+import sys
+
+import numpy as np
+import SofaRuntime
+from splib3.animation import AnimationManagerController
 
 sys.path.insert(0, str(pathlib.Path(__file__).parent.absolute())+"/../")
 sys.path.insert(0, str(pathlib.Path(__file__).parent.absolute()))
 
 
-from GripperToolbox import rewardShaper, goalSetter
 from Gripper import Gripper
+from GripperToolbox import goalSetter, rewardShaper
 
 path = os.path.dirname(os.path.abspath(__file__))+'/mesh/'
 
@@ -189,8 +187,8 @@ def createScene(root, config={"source": [-600.0, -25, 100],
 
 
 def main():
-    import SofaRuntime
     import Sofa.Gui
+    import SofaRuntime
     SofaRuntime.importPlugin("SofaOpenglVisual")
     SofaRuntime.importPlugin("CImgPlugin")
     SofaRuntime.importPlugin("SofaBaseMechanics")

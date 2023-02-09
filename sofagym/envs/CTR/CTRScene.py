@@ -9,18 +9,18 @@ __copyright__ = "(c) 2021, Robocath, CNRS, Inria"
 __date__ = "Nov 28 2021"
 
 
-import sys
 import pathlib
+import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).parent.absolute())+"/../")
 sys.path.insert(0, str(pathlib.Path(__file__).parent.absolute()))
 
 
-from os.path import dirname, abspath
-import SofaRuntime
-from splib3.animation import AnimationManagerController
+from os.path import abspath, dirname
 
-from CTRToolbox import RewardShaper, GoalSetter
+import SofaRuntime
+from CTRToolbox import GoalSetter, RewardShaper
+from splib3.animation import AnimationManagerController
 
 # Register all the common component in the factory.
 SofaRuntime.importPlugin("SofaComponentAll")

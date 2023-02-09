@@ -1,21 +1,20 @@
-import Sofa
 import math
-
-import sys
 import pathlib
+import sys
+
+import Sofa
 
 sys.path.insert(0, str(pathlib.Path(__file__).parent.absolute())+"/../")
 sys.path.insert(0, str(pathlib.Path(__file__).parent.absolute()))
 
 
-from math import cos
-from math import sin
+import os
+from math import cos, sin
+
 import numpy as np
 from splib.animation import AnimationManagerController
-from TrunkCupToolbox import rewardShaper, goalSetter
+from TrunkCupToolbox import goalSetter, rewardShaper
 
-
-import os
 path = os.path.dirname(os.path.abspath(__file__))+'/mesh/'
 dirPath = os.path.dirname(os.path.abspath(__file__))+'/'
 

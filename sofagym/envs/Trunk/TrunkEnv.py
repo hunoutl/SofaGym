@@ -9,14 +9,13 @@ __copyright__ = "(c) 2020, Inria"
 __date__ = "Oct 7 2020"
 
 import os
-import numpy as np
 import sys
+
+import numpy as np
+from gym import spaces
 
 from sofagym.AbstractEnv import AbstractEnv
 from sofagym.rpc_server import start_scene
-
-from gym import spaces
-
 
 
 class TrunkEnv(AbstractEnv):

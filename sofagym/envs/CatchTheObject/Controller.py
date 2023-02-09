@@ -11,8 +11,8 @@ __version__ = "1.0.0"
 __copyright__ = "(c) 2021, Inria"
 __date__ = "March 8 2021"
 
-import Sofa
 import numpy as np
+import Sofa
 
 
 class ControllerCatchTheObject(Sofa.Core.Controller):

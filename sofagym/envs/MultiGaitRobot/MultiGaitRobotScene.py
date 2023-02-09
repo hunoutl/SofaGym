@@ -1,14 +1,14 @@
 
-import sys
 import pathlib
+import sys
+
 sys.path.insert(0, str(pathlib.Path(__file__).parent.absolute())+"/../")
 sys.path.insert(0, str(pathlib.Path(__file__).parent.absolute()))
 
-from MultiGaitRobotToolbox import rewardShaper, goalSetter
-
-from splib3.animation import AnimationManagerController
 import os
 
+from MultiGaitRobotToolbox import goalSetter, rewardShaper
+from splib3.animation import AnimationManagerController
 
 VISUALISATION = False
 
@@ -253,6 +253,7 @@ def createScene(rootNode, config={"source": [220, -500, 100],
     if VISUALISATION:
         print(">> Add runSofa visualisation")
         from visualisation import ApplyAction, get_config
+
         # path = str(pathlib.Path(__file__).parent.absolute())+"/../../../"
         config = get_config("./config_a_la_main.txt")
         config_env = config['env']

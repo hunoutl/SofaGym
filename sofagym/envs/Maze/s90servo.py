@@ -8,16 +8,18 @@
         - KinematicMotorController
         - ServoWheel
 """
-import sys
 import pathlib
+import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).parent.absolute())+"/../")
 sys.path.insert(0, str(pathlib.Path(__file__).parent.absolute()))
 
 
+import os
+
 from splib3.objectmodel import *
 from stlib3.scene import Scene
-import os
+
 mesh_path = os.path.dirname(os.path.abspath(__file__))+'/mesh/'
 
 

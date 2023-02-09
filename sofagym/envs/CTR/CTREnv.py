@@ -8,14 +8,15 @@ __version__ = "1.0.0"
 __copyright__ = "(c) 2021, Robocath, CNRS, Inria"
 __date__ = "Dec 01 2021"
 
+import os
+
+import numpy as np
+from gym import spaces
+
 from sofagym.AbstractEnv import AbstractEnv
+from sofagym.envs.CTR.CTRToolbox import startCmd
 from sofagym.rpc_server import start_scene
 from sofagym.viewer import LegacyViewer
-from sofagym.envs.CTR.CTRToolbox import startCmd
-
-from gym import spaces
-import os
-import numpy as np
 
 
 class ConcentricTubeRobotEnv(AbstractEnv):

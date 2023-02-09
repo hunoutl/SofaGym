@@ -8,15 +8,14 @@ __version__ = "1.0.0"
 __copyright__ = "(c) 2021, Robocath, CNRS, Inria"
 __date__ = "Dec 01 2021"
 
-import sys
 import pathlib
-from os.path import dirname, abspath
+import sys
+from os.path import abspath, dirname
 
 sys.path.insert(0, str(pathlib.Path(__file__).parent.absolute())+"/../")
 sys.path.insert(0, str(pathlib.Path(__file__).parent.absolute()))
 
-from DiamondToolbox import rewardShaper, goalSetter
-
+from DiamondToolbox import goalSetter, rewardShaper
 from splib3.animation import AnimationManagerController
 
 path = dirname(abspath(__file__))+'/mesh/'

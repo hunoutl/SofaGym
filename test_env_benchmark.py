@@ -12,13 +12,14 @@ __version__ = "1.0.0"
 __copyright__ = "(c) 2020, Robocath, Inria"
 __date__ = "Oct 7 2020"
 
-import sys
 import os
-import time
 import random as rd
-import gym
+import sys
+import time
 
+import gym
 import psutil
+
 pid = os.getpid()
 py = psutil.Process(pid)
 

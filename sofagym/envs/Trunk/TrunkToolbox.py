@@ -9,7 +9,6 @@ __copyright__ = "(c) 2020, Inria"
 __date__ = "Oct 7 2020"
 
 import numpy as np
-
 import Sofa
 import Sofa.Core
 import Sofa.Simulation
